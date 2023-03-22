@@ -25,6 +25,7 @@ export const renderButtons = (element) => {
         await usersStore.loadPreviousPage()
         currentPageLabel.innerText = usersStore.getCurrentPage()
         renderTable(element)
+        
 
     })
 }
