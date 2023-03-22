@@ -30,7 +30,6 @@ export const renderTable = async(element) =>{
 
     let tableHTML = '';
     users.forEach( user => {
-        console.log(user);
         tableHTML += `
             <tr>
                 <td>${user.id}</td>
