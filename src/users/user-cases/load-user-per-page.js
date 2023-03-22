@@ -5,6 +5,5 @@ export const loadUsersByPage = async(page =1) => {
     const res = await fetch(url)
     const data = await res.json()
     const users = data.map(user=>userToModel(user))
-
-    console.log(users)
+    return users
 }
