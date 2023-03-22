@@ -20,4 +20,11 @@ export const renderButtons = (element) => {
         currentPageLabel.innerText = usersStore.getCurrentPage()
         renderTable(element)
     })
+
+    prevButton.addEventListener("click", async()=>{
+        await usersStore.loadPreviousPage()
+        currentPageLabel.innerText = usersStore.getCurrentPage()
+        renderTable(element)
+
+    })
 }
